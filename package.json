@@ -1,33 +1,18 @@
 {
   "name": "coinlist-types",
   "version": "1.0.0",
-  "description": "",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "files": [
-    "dist",
-    "src"
-  ],
+  "description": "Coinlist types",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "prepare": "npm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/NUT-A/coinlist-types.git"
+    "prepare" : "npm run build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/NUT-A/coinlist-types/issues"
-  },
-  "homepage": "https://github.com/NUT-A/coinlist-types#readme",
   "devDependencies": {
-    "@types/node": "^18.8.5",
-    "ts-node": "^10.7.0"
-  },
-  "dependencies": {
-    "is-reachable": "^5.2.1"
+    "typescript": "^5.1.3"
   }
 }
