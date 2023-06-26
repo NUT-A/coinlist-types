@@ -1,0 +1,1 @@
+# coinlist-types
