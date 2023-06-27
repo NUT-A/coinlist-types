@@ -31,13 +31,15 @@ export type ParticipateInSaleInputData = {
     readonly saleName: Sale
 }
 
+export type InputData = SampleInputData | LoginInputData | RegisterToSaleInputData | ParticipateInSaleInputData
+
 export type AccountData = {
     readonly onePasswordID: string
     readonly proton: string
     readonly name: string
 }
 
-export type InputData = (SampleInputData | LoginInputData | RegisterToSaleInputData | ParticipateInSaleInputData) & {
+export type AccountInputData = InputData & {
     account: AccountData
 }
 
