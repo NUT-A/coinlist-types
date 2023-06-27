@@ -48,3 +48,16 @@ export function isLoginReason(reason: string): reason is LoginReason {
 export function isSale(sale: string): sale is Sale {
     return sales.some((item) => item === sale)
 }
+
+export function generateAutomationName(data: InputData): string {
+    switch (data.action) {
+        case 'sample':
+            return 'sample'
+        case 'login':
+            return `Login ${data.loginReason} ${data.saleName}`
+        case 'register-to-sale':
+            return `Register to sale ${data.saleName}`
+        case 'participate-in-sale':
+            return `Participate in sale ${data.saleName}`
+    }
+}
