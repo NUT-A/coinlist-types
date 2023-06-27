@@ -21,3 +21,13 @@ export type ParticipateInSaleInputData = {
     readonly action: 'participate-in-sale'
     readonly saleName: Sale
 }
+
+export type AccountData = {
+    readonly onePasswordID: string
+    readonly proton: string
+    readonly name: string
+}
+
+export type InputData = (SampleInputData | LoginInputData | RegisterToSaleInputData | ParticipateInSaleInputData) & {
+    account: AccountData
+}
