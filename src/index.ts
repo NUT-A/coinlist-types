@@ -7,7 +7,8 @@ export type Sale = (typeof sales)[number]
 
 const reasons = [
     'Register to sale',
-    'Participate in sale'
+    'Participate in sale',
+    'Plain login'
 ] as const
 export type LoginReason = (typeof reasons)[number]
 
@@ -17,7 +18,7 @@ export type SampleInputData = {
 
 export type LoginInputData = {
     readonly action: 'login'
-    readonly saleName: Sale
+    readonly saleName: Sale | undefined
     readonly loginReason: LoginReason
 }
 
